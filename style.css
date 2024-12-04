@@ -1,0 +1,137 @@
+ /* variable */
+ :root {
+  --colorviolet: rgb(75, 5, 67);
+  --colorblanc: #fff;
+  --colorgris: #000;
+}
+
+h1 span {
+  width: 50px;
+  height: 10px;
+  background-color: var(--colorviolet);
+  border-radius: 100px;
+  display: block;
+}
+h1 {
+  color: var(--colorviolet);
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+h3 {
+  color: var(--colorviolet);
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 90px;
+  line-height: 5px;
+}
+h2 {
+  color: var(--colorgris);
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/*   */
+.pg {
+  color: var(--colorgris);
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: justify;
+  padding-left: 90px;
+}
+ /* premier button plus sur moi */
+button {
+  background-color: var(--colorblanc);
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 80px;
+  border-radius: 100px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+}
+
+button span {
+  padding: 0 10px;
+  font-size: 20px;
+}
+button img {
+  width: 50px;
+  height: 45px;
+  color: var(--colorviolet);
+  cursor: pointer;
+}
+/* le corps */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background: linear-gradient(to right, rgb(41, 14, 149), #fff, #fff, #fff);
+}
+/* id image principal */
+#img1 {
+  width: 500px;
+  height: 700px;
+
+  object-fit: cover;
+  border-radius: 40px;
+  box-shadow: 3px 3px 10px var(--colorviolet);
+  margin: 50px 0px 0px 70px;
+}
+/* class pour les button */
+.icone {
+  background-color: transparent;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 1s linear;
+  height: 50px;
+}
+/* transition button */
+.icone:hover {
+  background-color: rgb(104, 91, 153);
+  border-radius: 100px;
+}
+/* class pour les img */
+.but { 
+  border-radius: 100px;
+  background-color: rgb(104, 91, 153);
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+}
+/* responsivite tablette */
+@media (width <= 768px) {
+  }
+  body{
+    flex-direction: column;
+    background:none
+  }
+/* img principal */
+  #img1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+/* class div principal de tout les button  */
+#AD {
+  background-color: transparent;
+  padding: 0px;
+  display: none;
+ 
+  
+  }
+  /* class div premier button */
+  #AD1 {
+    display: flex;
+    justify-content: center;
+   
+    }
+    /* responsivite smartphone */
+    @media (width <= 578px) {
+    }
+  
